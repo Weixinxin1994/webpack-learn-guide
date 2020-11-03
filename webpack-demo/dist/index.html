@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://unpkg.com/lodash@4.16.6"></script>这种引用属于隐式依赖关系。index.js文件在执行之前，还依赖于页面中引入的lodash，之所以是隐式的是因为
+    index.js内并waibu 未显式声明需要引入lodash，只是假定已经存在一个全局变量_。 -->
+    <!-- 这种方式管理js项目会有一下问题
+    1。无法立即体现，脚本的执行依赖于外部扩展库。
+    2.如果依赖不存在，或者引入顺序错误，应用程序将无法正常运行。
+    3.如果依赖被引入但是并没有使用，浏览器将被迫下载无用的代码
+    -->
+
+    <!-- "源代码"用于书写和编辑的代码，"分发代码是构建过程中产生的代码最小化和优化后的输出目录" -->
+
+    <!-- 在安装一个要打到生产环境的安装包时，应该使用npm install --save
+        安装开发环境的包使用npm install --save-dev
+    -->
+</head>
+<body>
+    <!-- <script src="./src/index.js"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
